@@ -40,7 +40,7 @@ class Table():
         else:
             if start is None:
                 start = 1
-            elif end is None:
+            if end is None:
                 end = self.width
             self.content.append(r'\cline{' + str(start) + '-' + str(end) + '}')
 
